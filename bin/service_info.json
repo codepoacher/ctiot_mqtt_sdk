@@ -1,0 +1,106 @@
+{
+  "productInfo": {
+    "productId": 10029135
+  },
+  "properties": [
+    {
+      "propertyId": 1,
+      "identifier": "ecl",
+      "propertyName": "无线信号覆盖等级",
+      "description": null,
+      "dataType": "Int32",
+      "dataSchema": "\"len\":4,\"min\":\"-32768\",\"max\":\"32767\",\"step\":\"1\",\"unitName\":\"\",\"unit\":\"null\""
+    },
+    {
+      "propertyId": 2,
+      "identifier": "pci",
+      "propertyName": "物理小区标识",
+      "description": null,
+      "dataType": "Int32",
+      "dataSchema": "\"len\":4,\"min\":\"-32768\",\"max\":\"32767\",\"step\":\"1\",\"unitName\":\"\",\"unit\":\"null\""
+    },
+    {
+      "propertyId": 3,
+      "identifier": "rsrp",
+      "propertyName": "参考信号接收功率",
+      "description": null,
+      "dataType": "Int32",
+      "dataSchema": "\"len\":4,\"min\":\"-32768\",\"max\":\"32767\",\"step\":\"1\",\"unitName\":\"\",\"unit\":\"null\""
+    },
+    {
+      "propertyId": 4,
+      "identifier": "sinr",
+      "propertyName": "信号与干扰加噪声比",
+      "description": null,
+      "dataType": "Int32",
+      "dataSchema": "\"len\":4,\"min\":\"-32768\",\"max\":\"32767\",\"step\":\"1\",\"unitName\":\"分贝\",\"unit\":\"dB\""
+    },
+    {
+      "propertyId": 5,
+      "identifier": "cell_id",
+      "propertyName": "小区位置信息",
+      "description": null,
+      "dataType": "Int32",
+      "dataSchema": "\"len\":4,\"min\":\"-2147483648\",\"max\":\"2147483647\",\"step\":\"1\",\"unitName\":\"\",\"unit\":\"null\""
+    },
+    {
+      "propertyId": 6,
+      "identifier": "wifi_pwd",
+      "propertyName": "WIFI密码",
+      "description": null,
+      "dataType": "string",
+      "dataSchema": "\"len\":2048"
+    },
+    {
+      "propertyId": 7,
+      "identifier": "wifi_name",
+      "propertyName": "WIFI名称",
+      "description": null,
+      "dataType": "string",
+      "dataSchema": "\"len\":2048"
+    }
+  ],
+  "services": [
+    {
+      "serviceId": 2,
+      "identifier": "signal_report",
+      "serviceName": "信号数据上报",
+      "serviceType": "DataReport",
+      "description": "",
+      "properties": [
+        {
+          "propertyId": 3
+        },
+        {
+          "propertyId": 4
+        },
+        {
+          "propertyId": 2
+        },
+        {
+          "propertyId": 1
+        },
+        {
+          "propertyId": 5
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "serviceId": 1,
+      "identifier": "data_report",
+      "serviceName": "业务数据上报",
+      "serviceType": "DataReport",
+      "description": "",
+      "properties": [
+        {
+          "propertyId": 6
+        },
+        {
+          "propertyId": 7
+        }
+      ],
+      "parameters": []
+    }
+  ]
+}

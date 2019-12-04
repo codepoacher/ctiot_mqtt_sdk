@@ -1,0 +1,12 @@
+{
+  "DeviceNo": "001",
+  "DeviceID": "10029135001",
+  "Protocol": "MQTT",
+  "Authorization": "token",
+  "Token": "0HMySQVFMsXe3hiNH-O2-v87t7NUaQDXRdL7OJHA3yE",
+  "Transparent": 0,
+  "TCPAddress": "mqtt.ctwing.cn",
+  "TCPPort": 1883,
+  "TLSAddress": "mqtt.ctwing.cn",
+  "TLSPort": 8883
+}
